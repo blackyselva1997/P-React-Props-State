@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MobilesChild from "./Mobiles-Child";
 
 const Mobile = () => {
@@ -42,7 +42,7 @@ const Mobile = () => {
   ];
   return (
     <div>
-      <MobilesChild Mobiless = {Mobiles} />
+      <MobilesChild Mobiless={Mobiles} />
     </div>
   );
 };

@@ -12,18 +12,18 @@ const MobilesChild = (props) => {
       if (lc > uc) return 1;
       return 0;
     });
-    {b === "pass" ? changeState(a) : changeState(a.reverse())}
+    b === "pass" ? changeState(a) : changeState(a.reverse());
   };
 
   let Price = (P) => {
-    let a = [...props.Mobiless].sort((a,b) => a.price - b.price);
-    {P === "pass" ? changeState(a) : changeState(a.reverse())}
+    let a = [...props.Mobiless].sort((a, b) => a.price - b.price);
+    P === "pass" ? changeState(a) : changeState(a.reverse());
   };
 
   let Filter = (F) => {
-    let a = [...props.Mobiless].filter(value => value.isPurchased);
-    {F === "pass" ? changeState(a) : changeState(exMobile)}
-  }
+    let a = [...props.Mobiless].filter((value) => value.isPurchased);
+    F === "pass" ? changeState(a) : changeState(exMobile);
+  };
   return (
     <div>
       <button onClick={() => Acc("pass")}>Accending</button>
